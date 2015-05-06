@@ -46,3 +46,13 @@ void ParPtrTree::UNION(int a, int b) {
 bool ParPtrTree::DIFFER(int a, int b) {
     return FIND(a) != FIND(b);
 }
+
+int ParPtrTree::ROOTS() {
+    int counter = 0;
+    for (int i = 0; i < size; ++i) {
+        if (array[i] == -1) {
+            ++counter;
+        }
+    }
+    return counter;
+}

@@ -5,18 +5,13 @@
  *      Author: aaronc
  */
 
+#ifndef HEAP_H_
+#define HEAP_H_
+
 #include <exception>
 
 
-class max {
-public:
-    template <typename E>
-    static bool prior (E a, E b) {
-        return a > b;
-    }
-};
-
-class min {
+class comp {
 public:
     template <typename E>
     static bool prior (E a, E b) {
@@ -132,4 +127,4 @@ public:
 };
 
 
-
+#endif
