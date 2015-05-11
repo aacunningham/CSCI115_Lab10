@@ -5,8 +5,8 @@
  *      Author: aaronc
  */
 
-#ifndef HEAP_H_
-#define HEAP_H_
+#ifndef HEAP_TPP_
+#define HEAP_TPP_
 
 #include <exception>
 

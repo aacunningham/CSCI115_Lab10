@@ -147,10 +147,9 @@ Graph* readGraph(std::string filename) {
     input >> size;
     Graphm* newGraph = new Graphm(size);
     std::string temp;
-    while (std::getline(input, temp)) {
-        std::istringstream sstream (temp);
+    for (int i = 0; i < size; ++i) {
         int v1, v2, wt;
-        sstream >> v1 >> v2 >> wt;
+        input >> v1 >> v2 >> wt;
         newGraph->setEdge(v1, v2, wt);
     }
     input.close();

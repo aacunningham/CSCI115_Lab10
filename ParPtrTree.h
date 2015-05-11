@@ -19,7 +19,6 @@ public:
     ~ParPtrTree();
     void UNION(int, int);
     bool DIFFER(int, int);
-    int ROOTS();
 };
 
 
